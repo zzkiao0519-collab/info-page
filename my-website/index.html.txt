@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的專屬資訊頁</title>
+  <style>
+    /* 整體背景與字體設定 */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333333;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* 中央卡片容器 */
+    .container {
+      width: 100%;
+      max-width: 480px;
+      background: #ffffff;
+      padding: 32px 24px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      text-align: center;
+    }
+
+    /* 頭像設定（如果不需要圖片可以刪掉這段和下面的 img 標籤） */
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
+      background-color: #e0e0e0;
+    }
+
+    /* 標題與簡介 */
+    h1 {
+      font-size: 22px;
+      margin: 0 0 8px 0;
+    }
+
+    p.bio {
+      font-size: 14px;
+      color: #666666;
+      line-height: 1.6;
+      margin: 0 0 24px 0;
+    }
+
+    /* 連結按鈕區 */
+    .link-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .link-btn {
+      display: block;
+      padding: 14px 20px;
+      background-color: #2b5876;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 15px;
+      transition: background-color 0.2s, transform 0.1s;
+    }
+
+    .link-btn:hover {
+      background-color: #1e3f56;
+      transform: translateY(-2px);
+    }
+
+    /* 資訊區塊 */
+    .info-box {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid #eeeeee;
+      text-align: left;
+      font-size: 14px;
+      color: #555555;
+    }
+
+    .info-box h2 {
+      font-size: 16px;
+      margin: 0 0 10px 0;
+      color: #333333;
+    }
+
+    .info-box ul {
+      padding-left: 20px;
+      margin: 0;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- 1. 圖片（可放頭像或活動主視覺，把圖片檔放在同個資料夾並改檔名即可） -->
+    <!-- <img src="logo.png" alt="頭像" class="avatar"> -->
+
+    <!-- 2. 主標題與簡介 -->
+    <h1>這裡放網站主標題</h1>
+    <p class="bio">這裡可以寫一段簡短的自我介紹、活動說明，或是公告事項。</p>
+
+    <!-- 3. 連結按鈕（複製 <a> 這一行就能無限增加按鈕） -->
+    <div class="link-list">
+      <a href="https://www.instagram.com/" target="_blank" class="link-btn">Instagram 官方帳號</a>
+      <a href="https://forms.google.com/" target="_blank" class="link-btn">活動報名表單</a>
+      <a href="https://www.youtube.com/" target="_blank" class="link-btn">相關影音介紹</a>
+    </div>
+
+    <!-- 4. 條列資訊區 -->
+    <div class="info-box">
+      <h2>重要資訊與公告</h2>
+      <ul>
+        <li><strong>時間：</strong>2026 年 12 月 15 日 18:30</li>
+        <li><strong>地點：</strong>活動中心 2 樓</li>
+        <li><strong>聯絡信箱：</strong>example@email.com</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
